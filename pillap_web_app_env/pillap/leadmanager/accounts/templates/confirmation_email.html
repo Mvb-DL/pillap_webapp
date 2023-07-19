@@ -1,0 +1,21 @@
+<div>
+    {% autoescape off %}  
+
+    Hey {{ name }}, <br><br>
+
+    <b>Willkommen in der Pillap Community!</b><br><br>
+
+    Bitte klicke auf den folgenden Link, um den Newsletter-Anmeldeprozess abzuschließen.<br><br>
+
+    http://{{ domain }}{% url 'activate' uidb64=uid token=token %}<br><br>
+
+    Warum ist das wichtig? <br>
+    Mit deiner Bestätigung stellen wir sicher, dass deine E-Mailadresse nicht von unbefugten Dritten eingetragen wurde.<br>
+    Ein Widerruf dieser Einwilligung ist jederzeit am Ende jedes Newsletters [oder unter Link Newsletter Webseite] möglich.<br><br>
+
+    Viel Freude beim Verfolgen unserer Entwicklung und den regelmäßigen Updates wünscht dir<br><br>
+
+    Dein Pillap-Team<br>
+
+    {% endautoescape %}  
+</div>
